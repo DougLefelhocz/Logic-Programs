@@ -206,8 +206,6 @@ def evaluate_wff(num_wff):
     # return the result of the stack
     truth_dict = {'0':False, '1':True}
     return truth_dict[stack[0]] 
-
-print evaluate_wff('CNCNpNqCNCNpqNp')
     
 def tautology_tester(wff):
     """
@@ -707,11 +705,6 @@ def deparenthesize(wff):
             new_wff += symbol
     return new_wff
     
-parenthesize_list = ['CxCyx', 'CCxCyzCCxyCxz', 'CKxyx', 'CKxyy', 'CxCyKxy',
-'CxAxy', 'CxAyx', 'CCxyCCzyCAxzy', 'CxCNxy', 'CCxNyCyNx']
-
-for element in parenthesize_list:
-    print 'P(' + parenthesize(element) + ').'
 
 
     
